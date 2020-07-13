@@ -3,4 +3,16 @@
 
 (() => {
     // your code here
+    let Me = {
+        lastname : "Jacquemart",
+        firstname : "Robin",
+        age : "26",
+        city : "Namur",
+        country: "Belgique"
+    }
+
+    document.getElementById("run").addEventListener("click", () => {
+
+        console.log(Me)
+    })
 })();

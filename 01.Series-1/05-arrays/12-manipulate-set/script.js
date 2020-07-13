@@ -2,7 +2,7 @@
 
 
 (() => {
-    const fruits = new Set([
+    const fruits = new Set([  // le set() permet de n'avoir qu'une seule fois l'argument
         "apple",
         "pear",
         "strawberry",
@@ -18,6 +18,8 @@
     // your code here
 
     document.getElementById("run").addEventListener("click", () => {
-        fruits.splice
+        fruits.delete("apple", "cerise")
+        fruits.add('banana').add("kiwi")
+        console.log(fruits)
     })
 })();

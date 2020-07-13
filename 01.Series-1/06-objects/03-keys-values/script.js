@@ -11,4 +11,11 @@
         status: "married",
     };
     // your code here
+
+    document.getElementById("run").addEventListener("click", () => {
+        console.log(Object.keys(person)) // Permet de récupréré le nom des propriété
+        console.log(Object.values(person)) //Permet de retourner les valeurs 
+    })
+
 })();
+

@@ -4,5 +4,6 @@
 (() => {
 
     // your code here
+    document.getElementsByClassName("material")[0].getElementsByTagName("p")[0].innerHTML = "owned"
 
 })();

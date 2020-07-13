@@ -19,4 +19,20 @@
         user: null,
     };
     // your code here
+    document.getElementById("run").addEventListener("click", () => {
+        computers.forEach(elt => {
+            if(!elt.available) {
+                elt.available = defaultProps.available  // Ajoute la propriété de l'objet defaultProps
+            }
+
+            if (!elt.user) {
+                elt.user = defaultProps.user // Ajoute la propriété de l'objet defaultProps
+            }
+
+            if(!elt.os) {
+                elt.os = defaultProps.os  // Ajoute la propriété de l'objet defaultProps
+            }
+        })
+        console.log(computers)
+    })
 })();

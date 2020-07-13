@@ -30,5 +30,32 @@
         "arboré",
     ]);
 
+    // let getRandBird = () => {
+    //     return 
+    // }
+
+    let getRandAdj = () => {
+        let randBird = Math.floor(Math.random() * birds.length)
+        let bird = birds[randBird]
+        const adjs = Array.from(adjectives)
+    
+        let adjNum = Math.floor(Math.random() * adjs.length)
+        let adj = adjs[adjNum]
+        //    let adj = adjectives[Math.floor(Math.random() * adjectives.size + 1)]
+        if(bird.fem){
+            adj += "e"
+            target = `La ${bird.name} ${adj}.`
+            return target
+        } else {
+            target = `Le ${bird.name} ${adj}.`
+            return target
+        }
+    }
+
+    document.getElementById("run").addEventListener("click", () =>  {
+          let target = getRandAdj()
+        console.log(target)
+        document.getElementById("target").innerText = target
+    })
     // your code here
 })();
