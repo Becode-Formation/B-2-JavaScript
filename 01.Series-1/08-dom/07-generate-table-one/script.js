@@ -4,5 +4,10 @@
 (() => {
 
     // your code here
-
+    let target = document.getElementById("target")
+    target.innerHTML = "<table></table>"
+    let td = document.createElement("td")
+    for(i = 0; i < 10; i++) {
+         target.getElementsByTagName('table')[0].innerHTML += td
+    }
 })();

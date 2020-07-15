@@ -12,5 +12,15 @@
     ];
 
     // your code here
-
+    let button = document.getElementById("next")
+    let img = document.getElementsByTagName('img')[0]
+    let n =  0
+        button.addEventListener("click", () => {
+            if(n === 5) {
+                n = 0
+            }
+            img.setAttribute('src', (gallery[n++]))
+            console.log(n)
+            
+        })
 })();
