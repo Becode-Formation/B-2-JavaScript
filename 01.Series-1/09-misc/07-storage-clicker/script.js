@@ -4,5 +4,14 @@
 (() => {
 
     // your code here
-
+    let target = document.getElementById("target")
+    let btn = document.getElementById("increment")
+    target.innerHTML = localStorage.getItem("number")
+    
+    btn.addEventListener("click", () => {
+       let nbr = parseInt(localStorage.getItem("number"), 10) + 1
+       localStorage.setItem("number", nbr)
+       target.innerHTML = nbr
+     })
+     
 })();

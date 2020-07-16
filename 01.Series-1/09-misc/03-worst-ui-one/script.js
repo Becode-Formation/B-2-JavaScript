@@ -4,5 +4,11 @@
 (() => {
 
     // your code here
+    let target = document.getElementById('target')
+    let slider = document.getElementById("slider")
+
+    slider.oninput = () => {
+        target.innerHTML = slider.value
+    }
 
 })();

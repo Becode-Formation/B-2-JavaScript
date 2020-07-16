@@ -2,7 +2,7 @@
 
 
 (() => {
-
+    
     // your code here
     let target = document.getElementById("target")
     let text = target.textContent
