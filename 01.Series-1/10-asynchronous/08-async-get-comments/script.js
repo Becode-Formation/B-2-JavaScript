@@ -3,4 +3,11 @@
 
 (() => {
     // your code here
+    document.getElementById("run").addEventListener("click", async () => {
+        const promise = await window.lib.getPosts()
+        promise.forEach( async comment => {
+            const posts = await window.lib.getComments(comment.id)
+            console.log(posts)
+         })
+        });
 })();

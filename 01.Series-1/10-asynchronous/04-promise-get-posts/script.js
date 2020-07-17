@@ -3,4 +3,10 @@
 
 (() => {
     // your code here
+    document.getElementById("run").addEventListener("click", () => {
+        const promise = window.lib.getPosts()
+        promise.then((posts) => posts.forEach(element => {
+            console.log(element)
+        }))
+    })
 })();

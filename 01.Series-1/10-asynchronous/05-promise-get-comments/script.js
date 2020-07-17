@@ -3,4 +3,16 @@
 
 (() => {
     // your code here
-})();
+
+    document.getElementById("run").addEventListener("click", () => {
+       const promise = window.lib.getPosts()
+       promise.then(articles => {
+           articles.forEach(article => {
+               const promise = window.lib.getComments(article.id)
+               promise.then(post => {
+                   console.log(post)
+               })
+           });
+       })
+    })
+})()
