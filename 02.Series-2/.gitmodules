@@ -1,0 +1,3 @@
+[submodule "ajax-simple-web-service-request"]
+	path = ajax-simple-web-service-request
+	url = git@github.com:JackRob/ajax-simple-web-service-request.git
